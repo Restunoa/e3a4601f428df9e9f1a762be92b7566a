@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 :: CONFIGURATION
 :: ============================================================
 set "GITHUB_API=https://api.github.com/repos/Restunoa/e3a4601f428df9e9f1a762be92b7566a/releases/latest"
-set "UPDATER_URL=https://github.com/Restunoa/e3a4601f428df9e9f1a762be92b7566a/blob/main/updater.bat"
+set "UPDATER_URL=https://github.com/Restunoa/e3a4601f428df9e9f1a762be92b7566a/raw/main/updater.bat"
 
 set "ROBLOX_DIR=%localappdata%\Roblox\Versions"
 set "TEMP_ZIP=%temp%\update.zip"
