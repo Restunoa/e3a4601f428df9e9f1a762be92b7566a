@@ -38,8 +38,8 @@ for /f "delims=" %%A in ('powershell -NoLogo -Command ^
     "$j = '%API_JSON%' | ConvertFrom-Json; $j.assets[0].label"') do set "EXPECTED_SHA=%%A"
 
 echo Latest version: %LATEST_VERSION%
-echo ZIP URL:        https://github.com/Restunoa/e3a4601f428df9e9f1a762be92b7566a/releases/download/master/unpack
-echo Expected SHA:   d78f6cfe0245101df73deed659c41811396b89bb6bebdafb7bbec7eafd72a411
+echo ZIP URL:        %ZIP_URL%
+echo Expected SHA:   %EXPECTED_SHA%
 echo.
 
 :: ============================================================
@@ -151,7 +151,7 @@ echo Verifying integrity...
 for /f "delims=" %%A in ('powershell -NoLogo -Command ^
     "(Get-FileHash '%TEMP_ZIP%' -Algorithm SHA256).Hash"') do set "ACTUAL_SHA=%%A"
 
-echo Expected: d78f6cfe0245101df73deed659c41811396b89bb6bebdafb7bbec7eafd72a411
+echo Expected: %EXPECTED_SHA%
 echo Actual:   %ACTUAL_SHA%
 
 if /i not "%EXPECTED_SHA%"=="%ACTUAL_SHA%" (
