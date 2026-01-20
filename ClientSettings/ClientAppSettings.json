@@ -1,0 +1,7 @@
+{
+  "DFIntCSGLevelOfDetailSwitchingDistance": "150",
+  "DFIntCSGLevelOfDetailSwitchingDistanceL12": "300",
+  "DFIntCSGLevelOfDetailSwitchingDistanceL23": "450",
+  "DFIntCSGLevelOfDetailSwitchingDistanceL34": "600",
+  "FFlagDebugSkyGray": "True"
+}
