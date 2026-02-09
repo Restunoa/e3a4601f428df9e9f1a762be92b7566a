@@ -3,7 +3,8 @@
   "DFIntCSGLevelOfDetailSwitchingDistanceL12": "300",
   "DFIntCSGLevelOfDetailSwitchingDistanceL23": "450",
   "DFIntCSGLevelOfDetailSwitchingDistanceL34": "600",
-  "DFIntDebugFRMQualityLevelOverride": "2",
+  "DFIntDebugFRMQualityLevelOverride": "4",
+  // "FFlagDebugGraphicsPreferVulkan": "True",
   "FFlagDebugSkyGray": "True",
   "FFlagHandleAltEnterFullscreenManually": "False"
 }
